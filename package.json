@@ -1,0 +1,45 @@
+{
+  "name": "cosine-tg-bot-template",
+  "version": "0.1.0",
+  "description": "一个 ts + SQLite + grammy + prisma 的 TG 机器人模板",
+  "scripts": {
+    "db:init": "npx prisma migrate dev --name init",
+    "start": "ts-node -r tsconfig-paths/register ./src/app.ts --files",
+    "db:push": "npx prisma db push",
+    "db:migrate": "npx prisma migrate dev",
+    "db:view": "npx prisma studio",
+    "lint": "eslint src/**/*.ts --fix",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2:restart": "pm2 restart ecosystem.config.js",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:log": "pm2 log ecosystem.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.490.0",
+    "@prisma/client": "5.13.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.3.1",
+    "grammy": "^1.22.4",
+    "mime-types": "^2.1.35",
+    "pino": "^8.17.2",
+    "pino-pretty": "^10.3.1",
+    "sqlite3": "^5.1.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.1.1",
+    "prisma": "^5.13.0"
+  }
+}
