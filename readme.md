@@ -1,4 +1,4 @@
-# cosine-pic-bot
+# cos-tool-bot
 
 从 [SomeACG/cosine-pic-bot](https://github.com/SomeACG/cosine-pic-bot) 抽离而来的 template 保留了一些开发 bot 需要的通用配置和依赖，可以按需去掉
 

@@ -1,7 +1,7 @@
 {
-  "name": "cosine-tg-bot-template",
+  "name": "cosine-tool-bot",
   "version": "0.1.0",
-  "description": "一个 ts + SQLite + grammy + prisma 的 TG 机器人模板",
+  "description": "一个SQLite + grammy + prisma 的 TG 机器人",
   "scripts": {
     "db:init": "npx prisma migrate dev --name init",
     "start": "ts-node -r tsconfig-paths/register ./src/app.ts --files",
